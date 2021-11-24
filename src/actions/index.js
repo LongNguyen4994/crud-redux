@@ -68,3 +68,10 @@ export const closeModal = () => {
         type: types.CLOSE_MODAL,
     }
 }
+
+
+export const testGithub = () => {
+    return{
+        type: test,
+    }
+}
