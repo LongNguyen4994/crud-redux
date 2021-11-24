@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import React, { Component } from 'react';
+import Control from './components/control';
+import TaskList from './components/taskList';
+import TaskModal from './components/taskModal';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  
+   render() {
+
+      return (
+         <div className="container text-center my-4">
+            <h1>TO DO LIST</h1>
+            <hr />
+            <Control/>
+            <hr />
+
+            {/* toDo-content */}
+            <TaskList/>
+
+            {/* MODAL THÊM, SỬA CÔNG VIỆC */}
+            <TaskModal/>
+         </div>
+      )
+   }
 }
 
-export default App;
+
+
+
+

@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* PROJECT: CRUD */
+
+.toDo-function{
+  .search-content{
+    button{
+      align-items: center;
+    }
+  }
+}
+
+.sortSelected::after{
+  content: '\f00c';
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0 0 0 20px;
+  display: inline-block;
+}
+// @import "~bootstrap/scss/bootstrap";
+
+// hiden STT on mobile screen
+@media screen and (max-width: 600px) {
+  .hiddenOnMobile {
+    clear: both;
+    display: none;
+  }
+}
