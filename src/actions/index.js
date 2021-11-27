@@ -70,8 +70,3 @@ export const closeModal = () => {
 }
 
 
-export const testGithub = () => {
-    return{
-        type: test,
-    }
-}
